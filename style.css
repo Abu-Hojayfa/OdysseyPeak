@@ -6,7 +6,7 @@
 
 /* common styles */
 .default-container {
-  width: 85%;
+  width: 90%;
   margin: 2rem auto;
   border-radius: 16px;
 }
@@ -21,7 +21,8 @@ h3 {
   line-height: normal;
 }
 
-p {
+p,
+li {
   color: #001f3f;
   text-align: center;
   font-family: Mulish;
@@ -36,6 +37,7 @@ p {
 }
 
 .btn-primary {
+  width: 175px;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -49,11 +51,11 @@ p {
   background: #ff5400;
   border: 1px solid #ff5400;
   cursor: pointer;
-  transition: box-shadow ease-in 0.5s;
+  transition: box-shadow ease-in 0.6s;
 }
 
 .btn-primary:hover {
-  box-shadow:  inset 10rem 0 0 0 #001f3f;
+  box-shadow: inset 20rem 0 0 0 #001f3f;
 }
 
 input,
@@ -61,6 +63,7 @@ select {
   width: 175px;
   height: 50px;
   padding: 0 0.5rem;
+  margin: 0 1rem;
   border-radius: 8px;
   font-size: 16px;
   border: none;
@@ -119,9 +122,6 @@ nav .logo img {
   align-items: center;
 }
 
-.explore-container {
-  width: 70%;
-}
 
 .explore-container h3 {
   color: #fffff0;
@@ -130,7 +130,7 @@ nav .logo img {
 }
 
 .explore-container p {
-  color: #fffff0;
+  color: rgba(255, 255, 240, 0.774);
   font-size: 18px;
   line-height: 26px;
   width: 676px;
@@ -139,6 +139,7 @@ nav .logo img {
 }
 
 .travel-inputs {
+  margin-top: 2rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
   display: flex;
@@ -146,4 +147,45 @@ nav .logo img {
   align-items: center;
   padding: 16px;
   backdrop-filter: blur(4px);
+}
+
+/* our popular tours */
+
+.popular-tour-dis p,
+.popular-tour-dis li{
+  font-size: 16px;
+}.popular-tour-dis p,
+.popular-tour-dis li,
+.popular-tour-dis h3 {
+  text-align: left;
+}
+.popular-tour-dis {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+li{
+  margin: 1rem 0;
+}
+.popular-tour-dis button {
+  /* margin-top: 2rem; */
+  padding: 0.7rem 2.2rem;
+}
+.popular-section .image {
+  border-radius: 16px;
+}
+.popular-section .image img {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.popular-section {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
