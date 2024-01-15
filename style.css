@@ -213,3 +213,26 @@ li {
 .row-3 {
   grid-template-columns: 0.75fr 1.25fr;
 }
+.your-destination img {
+  height: 300px;
+  filter: brightness(70%);
+}
+
+.row-1 > div,
+.row-2 > div,
+.row-3 > div {
+  position: relative;
+  cursor: pointer;
+}
+
+.row-1 > div > p,
+.row-2 > div > p,
+.row-3 > div > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
