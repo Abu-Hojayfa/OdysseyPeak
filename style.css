@@ -86,14 +86,14 @@ input:focus {
   justify-content: space-between;
   align-items: center;
 }
-nav .logo {
+.logo {
   width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav .logo img {
+.logo img {
   width: 48px;
   height: 56px;
 }
@@ -346,24 +346,41 @@ hr {
 .newsletter-dis input {
   width: 98%;
   min-width: 395px;
-  margin:0;
+  margin: 0;
   margin-left: 0;
   padding-right: 0;
   background: rgba(19, 19, 24, 0.05);
 }
-.newsletter-dis button{
+.newsletter-dis button {
   width: 100%;
   min-width: 405px;
 }
 
-.newsletter-image{
+.newsletter-image {
   position: relative;
 }
 
-.stick-to-other{
+.stick-to-other {
   width: 50% !important;
   height: auto !important;
   bottom: 0;
   right: 0;
   position: absolute;
+}
+
+/* footer section */
+.footer-part {
+  background: rgba(19, 19, 24, 0.05);
+  padding: 3rem 0;
+}
+.social {
+  width: 170px !important;
+}
+.footer-part .logo,
+.social {
+  margin: 2rem auto;
+}
+
+.footer-part hr{
+  margin-bottom: 1.5rem;
 }
