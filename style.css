@@ -89,13 +89,13 @@ input:focus {
 .logo {
   width: 280px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .logo img {
   width: 48px;
   height: 56px;
+  margin-right: 0.5rem;
 }
 
 .nav-option {
@@ -159,6 +159,9 @@ input:focus {
 .popular-tour-dis p,
 .popular-tour-dis li {
   font-size: 16px;
+  line-height: 24px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
 }
 .popular-tour-dis p,
 .popular-tour-dis li,
@@ -371,7 +374,7 @@ hr {
 /* footer section */
 .footer-part {
   background: rgba(19, 19, 24, 0.05);
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .social {
   width: 170px !important;
@@ -381,6 +384,96 @@ hr {
   margin: 2rem auto;
 }
 
-.footer-part hr{
+.footer-part hr {
   margin-bottom: 1.5rem;
+}
+
+/* Travel-Chronicles */
+
+.travel-stories button {
+  margin-top: 1.5rem;
+}
+
+.travel-stories .logo .choose-us-card-dis {
+  margin-top: 0;
+}
+.travel-stories .logo {
+  justify-content: left;
+  gap: 1rem;
+}
+
+.ham-burger {
+  display: none;
+}
+
+/* responsive for 600px */
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 36px !important;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .default-container {
+    margin: 3rem auto;
+  }
+
+  .logo h3 {
+    font-size: 30px !important;
+  }
+  .nav-bar {
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+  .nav-option {
+    display: none;
+  }
+  .ham-burger {
+    display: inline;
+  }
+  .ham-burger img{
+    width: 35px;
+  }
+
+  /* Adventure part */
+  .explore-container p {
+    width: 60%;
+  }
+  .commonPinMID {
+    width: 75%;
+  }
+  .travel-inputs {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+  .travel-inputs input,
+  .travel-inputs select,
+  .travel-inputs button {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .travel-inputs input {
+    width: 95%;
+  }
+
+  /* our popular tours */
+  .popular-section,
+  .row-1,
+  .row-2,
+  .row-3,
+  .newsTeller-section .row-3 {
+    grid-template-columns: 1fr;
+  }
+  .best-price-guarantee {
+    width: auto;
+  }
+
+  .footer-part {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+
+
 }
