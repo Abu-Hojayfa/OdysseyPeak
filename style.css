@@ -377,7 +377,13 @@ hr {
   padding: 2rem 0;
 }
 .social {
-  width: 170px !important;
+  width: 200px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social img{
+  height: 44px;
 }
 .footer-part .logo,
 .social {
