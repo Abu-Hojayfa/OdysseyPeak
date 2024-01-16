@@ -450,10 +450,23 @@ hr {
   }
   .travel-inputs input,
   .travel-inputs select,
-  .travel-inputs button {
+  .travel-inputs button,
+  .newsletter-dis input,
+  .newsletter-dis button {
     width: 100%;
     margin: 1rem 0;
   }
+
+  
+  .newsletter-dis input,
+  .newsletter-dis button{
+    min-width: 0;
+  }
+
+  .newsletter-dis{
+    gap: 0;
+  }
+
   .travel-inputs input {
     width: 95%;
   }
@@ -472,7 +485,7 @@ hr {
 
   .footer-part {
     padding: 0.5rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
 
